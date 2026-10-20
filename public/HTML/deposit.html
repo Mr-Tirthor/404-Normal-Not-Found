@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="hi-Latn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#103d35">
+	<meta name="description" content="SLate Bank par paise jama karein. Slip ke liye officer ko dhoondhna pad sakta hai.">
+	<title>Paise Jama | SLate Bank</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<script src="../JS/transaction.js" defer></script>
+</head>
+<body class="transaction-page">
+	<aside class="sidebar" id="sidebar" aria-label="Main navigation">
+		<a class="brand" href="index.html#home" aria-label="SLate Bank home"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">SLate<span>Bank</span></span></a>
+		<p class="nav-label">APNI BANKING</p>
+		<nav class="side-nav">
+			<a class="nav-link" href="index.html#home"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>Ek nazar</a>
+			<a class="nav-link" href="accounts.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg>Khate</a>
+			<a class="nav-link" href="withdraw.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v13m0 0 5-5m-5 5-5-5M5 20h14"/></svg>Paise nikalo</a>
+			<a class="nav-link active" href="deposit.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m0 0 5 5m-5-5L7 8M5 20h14"/></svg>Paise jama</a>
+		</nav>
+		<div class="sidebar-bottom"><a class="nav-link" href="index.html#support"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9a2.5 2.5 0 1 1 4.2 1.8c-1.1.9-1.8 1.3-1.8 2.7m0 3h.01"/></svg>Madad chahiye?</a><div class="sidebar-note"><span class="secure-dot"></span><span>Security 24x7, tension thodi kam</span></div></div>
+	</aside>
+	<div class="page-shell">
+		<header class="topbar"><button class="menu-toggle" type="button" aria-label="Menu kholo" aria-expanded="false" aria-controls="sidebar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div class="topbar-context"><span class="context-dot"></span>Apni banking</div><div class="topbar-actions"><a class="topbar-help" href="index.html#support">Atke kya?</a><span class="topbar-divider" aria-hidden="true"></span><a class="sign-in" href="accounts.html">Login <span aria-hidden="true">↗</span></a></div></header>
+		<main class="transaction-main">
+			<a class="transaction-breadcrumb" href="index.html#home">Ghar <span aria-hidden="true">/</span> Paise jama</a>
+			<section class="transaction-heading" aria-labelledby="page-title"><p class="eyebrow"><span></span> Paise andar lao</p><h1 id="page-title">Jama karte hain.</h1><p>Amount aur account chunein. Yeh practice flow hai; asli bank se connection nahi hai. Officer se slip milegi ya nahi, woh kismat aur lunch timing par hai.</p></section>
+			<div class="transaction-layout">
+				<section class="transaction-form-panel" aria-labelledby="deposit-form-title">
+					<div class="form-panel-heading"><span class="form-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 16V3m0 0 5 5m-5-5L7 8M5 20h14"/></svg></span><div><h2 id="deposit-form-title">Jama ki details</h2><p>Details bhariye. Paise safe hain, promise.</p></div></div>
+					<form class="transaction-form" data-transaction="deposit">
+						<div class="form-field"><label for="deposit-amount">Kitne paise?</label><div class="amount-input-wrap"><span class="amount-currency" aria-hidden="true">₹</span><input id="deposit-amount" name="amount" type="number" min="0.01" max="1000000" step="0.01" placeholder="0.00" inputmode="decimal" required></div><p class="form-help">₹0.01 se ₹10,00,000 tak. Itna bada amount? Wah!</p></div>
+						<div class="form-field"><label for="deposit-source">Paise kahan se aa rahe?</label><select id="deposit-source" name="source" required><option value="" selected disabled>Source chunein</option><option>Linked bank khata</option><option>Debit card</option><option>Cash counter</option><option>Bapu ki jeb se 👴</option><option>Dost se udhaar 🤝</option><option>Sofa ke neeche mila cash 🛋️</option><option>Gullak ka emergency fund 🐷</option><option>Salary aayi, seedha yahan 💸</option></select></div>
+						<div class="form-field"><label for="deposit-account">Kis account mein?</label><select id="deposit-account" name="account" required><option value="" selected disabled>Account chunein</option><option>Bandi ka account 😎</option><option>Bapu ka account 👴</option><option>Dost ki bandi ka account 💅</option><option>Chai budget account ☕</option><option>Manager ka secret fund 🕵️</option><option>Mummy ki emergency savings 🧿</option><option>Weekend party ka fund 🕺</option><option>Last salary ka raaz 🫠</option></select></div>
+						<div class="transaction-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg><span>Lunch break khatam ho bhi sakti hai... ya manager trip par ho sakte hain. Yeh practice flow hai; asli paise move nahi honge.</span></div>
+						<button class="form-submit" type="submit" formnovalidate>Officer se slip maango <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+					</form>
+				</section>
+				<aside class="transaction-info-panel" aria-labelledby="deposit-info-title"><div class="info-panel-topline"><span></span> Branch ka haal</div><h2 id="deposit-info-title">Office mein full filmy scene.</h2><p>Slip officer abhi unavailable hain. Wajah poochhi toh unhone manager ko poochhne bhej diya.</p><hr class="info-divider"><ul class="info-list"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Printer ko paper chahiye, paper ko printer.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Manager trip par. Officer permission lene gaye.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Wait time: ek chai, do meeting, aur thoda sa chamatkar.</span></li></ul><a class="transaction-return" href="index.html#support">Sawaal hain? Support se poochho <span aria-hidden="true">→</span></a></aside>
+			</div>
+		</main>
+		<footer class="footer transaction-footer"><span>© 2026 SLate Bank. All rights reserved.</span><span>Privacy <i aria-hidden="true">·</i> Security <i aria-hidden="true">·</i> Accessibility</span></footer>
+	</div>
+	<div class="sidebar-scrim" aria-hidden="true"></div>
+	<dialog class="slip-error-dialog" aria-labelledby="slip-error-title" aria-describedby="slip-error-message">
+		<div class="slip-error-content">
+			<button class="slip-error-close" type="button" aria-label="Error band karein">×</button>
+			<span class="slip-error-icon" aria-hidden="true">!</span>
+			<p class="slip-error-kicker">Branch alert <span aria-hidden="true">/</span> slip gayab</p>
+			<h2 id="slip-error-title">Arre, slip phir gayab!</h2>
+			<p class="slip-error-message" id="slip-error-message"></p>
+			<p class="slip-error-note">Chinta nahi, paise kahin nahi gaye.</p>
+			<button class="slip-error-dismiss" type="button">Theek hai, baad mein</button>
+		</div>
+	</dialog>
+</body>
+</html>

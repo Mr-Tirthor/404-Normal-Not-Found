@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="hi-Latn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#103d35">
+	<meta name="description" content="Apni SLate Bank profile details update karein aur accounts manage karein.">
+	<title>Khate aur Profile | SLate Bank</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<script src="../JS/accounts.js" defer></script>
+</head>
+<body class="transaction-page account-page">
+	<aside class="sidebar" id="sidebar" aria-label="Main navigation">
+		<a class="brand" href="index.html#home" aria-label="SLate Bank home"><span class="brand-mark" aria-hidden="true">S</span><span class="brand-name">SLate<span>Bank</span></span></a>
+		<p class="nav-label">APNI BANKING</p>
+		<nav class="side-nav">
+			<a class="nav-link" href="index.html#home"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>Ek nazar</a>
+			<a class="nav-link active" href="accounts.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg>Khate</a>
+			<a class="nav-link" href="withdraw.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v13m0 0 5-5m-5 5-5-5M5 20h14"/></svg>Paise nikalo</a>
+			<a class="nav-link" href="deposit.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m0 0 5 5m-5-5L7 8M5 20h14"/></svg>Paise jama</a>
+		</nav>
+		<div class="sidebar-bottom"><a class="nav-link" href="index.html#support"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9a2.5 2.5 0 1 1 4.2 1.8c-1.1.9-1.8 1.3-1.8 2.7m0 3h.01"/></svg>Madad chahiye?</a><div class="sidebar-note"><span class="secure-dot"></span><span>Security 24x7, tension thodi kam</span></div></div>
+	</aside>
+	<div class="page-shell">
+		<header class="topbar"><button class="menu-toggle" type="button" aria-label="Menu kholo" aria-expanded="false" aria-controls="sidebar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><div class="topbar-context"><span class="context-dot"></span>Apni banking</div><div class="topbar-actions"><a class="topbar-help" href="index.html#support">Atke kya?</a><span class="topbar-divider" aria-hidden="true"></span><a class="sign-in" href="accounts.html">Profile</a></div></header>
+		<main class="account-main">
+			<a class="transaction-breadcrumb" href="index.html#home">Ghar <span aria-hidden="true">/</span> Khate aur profile</a>
+			<section class="transaction-heading" aria-labelledby="page-title">
+				<p class="eyebrow"><span></span> Aapka account, aapke control mein</p>
+				<h1 id="page-title">Kya update karna hai?</h1>
+				<p>Process shuru karne ke liye option chunein. Yahan koi personal details type ya upload nahi karni.</p>
+			</section>
+
+			<nav class="account-actions" aria-label="Account actions">
+				<a class="account-action account-action-deposit" href="deposit.html"><span class="account-action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 16V3m0 0 5 5m-5-5L7 8M5 20h14"/></svg></span><span><strong>Paise jama</strong><small>Amount add karo, officer ko baad mein dhoondhna.</small></span><span class="account-action-arrow" aria-hidden="true">↗</span></a>
+				<a class="account-action account-action-withdraw" href="withdraw.html"><span class="account-action-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v13m0 0 5-5m-5 5-5-5M5 20h14"/></svg></span><span><strong>Paise nikalo</strong><small>Apne paise, apni marzi.</small></span><span class="account-action-arrow" aria-hidden="true">↗</span></a>
+			</nav>
+
+			<section class="account-directory" aria-labelledby="account-directory-title">
+				<div class="account-directory-heading"><div><p class="eyebrow"><span></span> Account overview</p><h2 id="account-directory-title">Aapke accounts</h2></div><span class="account-count">03 accounts</span></div>
+				<p class="account-directory-note">Privacy ke liye sirf account number ke pehle 4 digits dikhaye gaye hain.</p>
+				<ul class="account-directory-list">
+					<li class="account-directory-row"><span class="account-directory-icon" aria-hidden="true">EC</span><span class="account-directory-name"><strong>Everyday Checking</strong><small>Daily transactions</small></span><span class="account-number-bar" aria-label="Account number starts with 4182; remaining digits hidden"><strong>4182</strong><span aria-hidden="true">•••• •••• ••••</span></span></li>
+					<li class="account-directory-row"><span class="account-directory-icon" aria-hidden="true">PS</span><span class="account-directory-name"><strong>Personal Savings</strong><small>Savings account</small></span><span class="account-number-bar" aria-label="Account number starts with 7605; remaining digits hidden"><strong>7605</strong><span aria-hidden="true">•••• •••• ••••</span></span></li>
+					<li class="account-directory-row"><span class="account-directory-icon" aria-hidden="true">FJ</span><span class="account-directory-name"><strong>Family Joint Account</strong><small>Shared household account</small></span><span class="account-number-bar" aria-label="Account number starts with 9321; remaining digits hidden"><strong>9321</strong><span aria-hidden="true">•••• •••• ••••</span></span></li>
+				</ul>
+			</section>
+
+			<div class="account-layout">
+				<section class="account-process-panel" aria-labelledby="account-process-title">
+					<div class="form-panel-heading"><span class="form-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18m9-9H3"/></svg></span><div><h2 id="account-process-title">Update request shuru karo</h2><p>Jo change chahiye, uska option dabao.</p></div></div>
+					<div class="account-process-options">
+						<button class="account-process-option" type="button" data-process="name"><span class="account-process-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0M16 5l2 2m0-2-2 2"/></svg></span><span><strong>Naam update</strong><small>Naam mein spelling ya change request</small></span><span class="account-process-arrow" aria-hidden="true">→</span></button>
+						<button class="account-process-option" type="button" data-process="phone"><span class="account-process-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M10 5h4m-2 13h.01"/></svg></span><span><strong>Phone number update</strong><small>Naya number verify karne ka process</small></span><span class="account-process-arrow" aria-hidden="true">→</span></button>
+						<button class="account-process-option" type="button" data-process="identity"><span class="account-process-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M5.5 16a3.5 3.5 0 0 1 7 0m2-4h3m-3 3h3"/></svg></span><span><strong>Identity proof update</strong><small>Proof verification ka process shuru karo</small></span><span class="account-process-arrow" aria-hidden="true">→</span></button>
+					</div>
+					<p class="account-feedback" role="status" aria-live="polite">Koi option chunein; agla step yahan dikhega.</p>
+				</section>
+
+				<aside class="account-summary-panel" aria-labelledby="account-summary-title">
+					<div class="account-summary-top"><span class="account-avatar" aria-hidden="true">S</span><div><p class="eyebrow"><span></span> Update guide</p><h2 id="account-summary-title">Aage kya hoga?</h2></div></div>
+					<ol class="account-guide-list">
+						<li><span>01</span><p>Update ka type select karo.</p></li>
+						<li><span>02</span><p>Branch ya secure banking channel par verification complete karo.</p></li>
+						<li><span>03</span><p>Confirmation milne tak purani details active rahengi.</p></li>
+					</ol>
+					<div class="account-summary-foot"><span class="secure-dot"></span><span>Yahan koi personal information enter nahi hoti.</span></div>
+				</aside>
+			</div>
+		</main>
+		<footer class="footer transaction-footer"><span>© 2026 SLate Bank. All rights reserved.</span><span>Privacy <i aria-hidden="true">·</i> Security <i aria-hidden="true">·</i> Accessibility</span></footer>
+	</div>
+	<div class="sidebar-scrim" aria-hidden="true"></div>
+	<dialog class="slip-error-dialog account-joke-dialog" aria-labelledby="account-joke-title" aria-describedby="account-joke-message">
+		<div class="slip-error-content">
+			<button class="slip-error-close" type="button" aria-label="Popup band karein">×</button>
+			<span class="slip-error-icon" aria-hidden="true">!</span>
+			<p class="slip-error-kicker">Update request ka haal</p>
+			<h2 id="account-joke-title">Request shuru hui!</h2>
+			<p class="slip-error-message" id="account-joke-message"></p>
+			<p class="slip-error-note">Agla step secure channel ya branch par hoga.</p>
+			<button class="slip-error-dismiss" type="button">Theek hai</button>
+		</div>
+	</dialog>
+</body>
+</html>
